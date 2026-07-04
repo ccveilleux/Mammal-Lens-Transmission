@@ -279,9 +279,11 @@ my_formula <- logit_Lens ~ log_VA+Acuity.Type
 my_formula <- X50.T.nm ~ log_VA+AP.4+Acuity.Type #acuity, acuity type, diurnal v. non-diurnal
 my_formula <- X50.T.nm ~ log_VA+Acuity.Type #acuity, acuity type for non-diurnal species subset
 
+#select variables for chosen formula
+vars <- all.vars(my_formula)
+
 #subset data to match formula
 #all taxa
-vars <- all.vars(my_formula)
 data.df <- df.mam[complete.cases(df.mam[, vars]),] 
 
 #excluding haplorhines
@@ -316,9 +318,11 @@ my_formula <- logit_Lens ~ Rel.Cornea #relative cornea size for non-diurnal spec
 my_formula <- X50.T.nm ~ Rel.Cornea+AP.4 #relative cornea size, diurnal v. non-diurnal
 my_formula <- X50.T.nm ~ Rel.Cornea#relative cornea size for non-diurnal species subset
 
+#select variables for chosen formula
+vars <- all.vars(my_formula)
+
 #subset data to match formula
 #all taxa
-vars <- all.vars(my_formula)
 data.df <- df.mam[complete.cases(df.mam[, vars]),] 
 
 #excluding haplorhines
