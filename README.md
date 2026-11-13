@@ -9,7 +9,7 @@ Columns: Species, Order, Path.Length (mm), PropUVA (proportion of UVA transmitte
 
 - McDowell2024_UVA_data_subset.csv -- Subset of species from McDowell et al.'s lens transmission dataset, for calculating PropUVA and λT0.5.
 
-- McDowell_UVA_T50_analysis.csv -- Estimated vs. published lens transmission metrics from McDowell et al. data, used in correlation analyses of species overlapping with Douglas and Jeffery's (2014) dataset. This is the output of Section 1 in the R code, with an Exclude column added ("New" = new taxa not in Douglas and Jeffery's data; Y = two species excluded from correlation (see Figure S1).
+- McDowell_UVA_T50_analysis.csv -- Estimated vs. published lens transmission metrics from McDowell et al. data, used in correlation analyses of species overlapping with Douglas and Jeffery's (2014) dataset. This is the output of Section 1 in the R code, with an Exclude column added ("New" = new taxa not in Douglas and Jeffery's data; Y = two species excluded from correlation (see Figure S1)).
 
 - Hamster_digitized_data.csv -- Lens transmission curve digitized from Hut et al. (2000) Figure 5 for Syrian hamster (Mesocricetus auratus). Curve digitized using WebPlotDigitizer (version 5.2).
 
@@ -19,7 +19,7 @@ Columns: Species, Order, Path.Length (mm), PropUVA (proportion of UVA transmitte
 
 
 **Requirements:**
-All analyses were run in R 4.6.1. Required packages: ape (v.5.8.1), car (v.3.1.5), dplyr (v.1.2.1), geiger (v.2.0.12), ggplot2 (v.4.0.3), phylolm (v.2.6.5), phytools (v.2.5.2).
+All analyses were run in R 4.6.1. Required packages: ape (v.5.8.1), car (v.3.1.5), dplyr (v.1.2.1), geiger (v.2.0.12), ggplot2 (v.4.0.3), phylolm (v.2.6.5), phytools (v.2.5.2), nationalparkcolors(v.0.1.0), but any color palette can be substituted.
 
 **Tree provenance:**
 The full set of 10,000 mammalian phylogenetic trees is from VertLife.org:
